@@ -2,7 +2,7 @@ package org.ies.programs.model;
 
 import java.util.Objects;
 
-public class Audio extends Archivos {
+public class Audio extends Archivo {
     private int duracion;
 
     public Audio(int tamano, String path, int duracion) {

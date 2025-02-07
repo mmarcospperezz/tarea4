@@ -3,11 +3,11 @@ package org.ies.programs.model;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class Programas<T extends Archivos> {
+public class Programa<T extends Archivo> {
     private String nombre;
     private T[] archivos;
 
-    public Programas(String nombre, T[] archivos) {
+    public Programa(String nombre, T[] archivos) {
         this.nombre = nombre;
         this.archivos = archivos;
     }
@@ -40,7 +40,7 @@ public class Programas<T extends Archivos> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Programas<?> programas = (Programas<?>) o;
+        Programa<?> programas = (Programa<?>) o;
         return Objects.equals(nombre, programas.nombre) && Objects.deepEquals(archivos, programas.archivos);
     }
 

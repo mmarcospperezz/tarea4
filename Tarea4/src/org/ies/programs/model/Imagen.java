@@ -2,7 +2,7 @@ package org.ies.programs.model;
 
 import java.util.Objects;
 
-public class Imagen extends Archivos {
+public class Imagen extends Archivo {
     private int altura;
     private int anchura;
 

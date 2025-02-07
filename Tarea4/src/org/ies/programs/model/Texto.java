@@ -2,7 +2,7 @@ package org.ies.programs.model;
 
 import java.util.Objects;
 
-public class Texto extends Archivos {
+public class Texto extends Archivo {
     private String contenido;
 
     public Texto(int tamano, String path, String contenido) {

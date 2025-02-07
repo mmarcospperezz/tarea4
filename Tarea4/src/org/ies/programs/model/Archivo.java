@@ -2,11 +2,11 @@ package org.ies.programs.model;
 
 import java.util.Objects;
 
-public abstract class Archivos {
+public abstract class Archivo {
     protected int tamano;
     protected String path;
 
-    public Archivos(int tamaño, String path) {
+    public Archivo(int tamano, String path) {
         this.tamano = tamano;
         this.path = path;
     }
@@ -42,7 +42,7 @@ public abstract class Archivos {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Archivos archivos = (Archivos) o;
+        Archivo archivos = (Archivo) o;
         return tamano == archivos.tamano && Objects.equals(path, archivos.path);
     }
 
